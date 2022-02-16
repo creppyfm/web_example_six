@@ -11,19 +11,14 @@
 * {
     padding: 0;
     margin: 0;
-    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 62.5%;
     overflow: hidden;
     position: relative;
 }
 
-html {
-    font-size: 62.5%;
-    font-family: Roboto Serif, sans-serif;
-}
-
 body {
-    display: flex;
-    flex-direction: column;
+    font-family: Roboto Serif, sans-serif;
 }
 
 /* VARIABLES */
@@ -46,6 +41,15 @@ body {
 /*  */
 /*  */
 
+/* Utility Classes */
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
 /* MEDIA QUERIES */
 /* Ex-Small Devices */
 /* @media only screen and (max-width: 479px) {}; */
@@ -61,7 +65,6 @@ body {
 .header {
     display: flex;
     flex: 1 0 auto;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -74,7 +77,8 @@ body {
 
 /* Maintaining control of 'logo.png' */
 .logoImg {
-    max-width: 7rem;
+    width: 100%;
+    height: auto;
 }
 
 /* Style 'nav' links horizontally */
@@ -100,12 +104,11 @@ a:hover {
 }
 
 /* Style 'nav' search/input element */
-input,
-input:active {
-    display: flex;
+input {
     border: none;
     border-radius: 3rem;
     padding: 1rem 1rem;
+    font-size: 1rem;
     font-family: "Roboto Serif", sans-serif;
     color: rgba(73, 70, 70, 0.548);
     background-color: whitesmoke;
