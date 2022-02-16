@@ -53,7 +53,7 @@ body {
 /* @media only screen and (min-width: 480px) and (max-width: 767px) {}; */
 /* Medium Devices */
 /* @media only screen and (min-width: 768px) and (max-width: 1023px) {}; */
-/* Large/Extra-Large Devices */
+/* Large/Ex-Large Devices */
 /* @media only screen and (min-width: 1024px) {}; */
 
 /* HEADER */
@@ -70,10 +70,6 @@ body {
     border-bottom: 0.1rem solid rgb(160, 152, 152);
     background-color: rgba(73, 70, 70, 0.548);
 }
-
-.logo {
-}
-
 .logoImg {
     max-width: 7rem;
 }
@@ -96,9 +92,6 @@ a:hover {
     font-size: 2rem;
     color: yellow;
 }
-
-.navLi,
-a:
 
 .headerSearch {
     color: whitesmoke;
