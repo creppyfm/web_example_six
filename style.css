@@ -2,7 +2,9 @@
 /* TO UNFOLD ALL: (CTRL + K   CTRL + J) */
 /* TO FOLD ALL: (CTRL + K   CTRL + 0) */
 
-/* *  { border: 2px solid red }; */
+/* * {
+    border: 2px solid red;
+} */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,300;0,400;0,600;1,100;1,300;1,400;1,600&family=Roboto:ital,wght@0,100;0,700;0,900;1,700&display=swap");
 
@@ -19,19 +21,74 @@ html {
     font-family: Roboto Serif, sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 /* VARIABLES */
-/* .container {} */
+/* Header */
+/* .headContainer {} */
 /* .header {} */
 /* .logo {} */
 /* .logoLink {} */
-/* .logoImg */
+/* .logoImg {} */
+/* .nav {} */
+/* .navUl {} */
+/* .navLi {} */
+/* .headerSearch {} */
+/*  */
+/*  */
+/*  */
+/* Hero */
+/*  */
+/* Footer */
+/*  */
+/*  */
 
 /* MEDIA QUERIES */
 /* Ex-Small Devices */
-/* @media only screen and (max-width: 479px); */
+/* @media only screen and (max-width: 479px) {}; */
 /* Small Devices */
-/* @media only screen and (min-width: 480px) and (max-width: 767px); */
+/* @media only screen and (min-width: 480px) and (max-width: 767px) {}; */
 /* Medium Devices */
-/* @media only screen and (min-width: 768px) and (max-width: 1023px); */
+/* @media only screen and (min-width: 768px) and (max-width: 1023px) {}; */
 /* Large/Extra-Large Devices */
-/* @media only screen and (min-width: 1024px); */
+/* @media only screen and (min-width: 1024px) {}; */
+
+/* HEADER */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    max-height: 7.5rem;
+    padding: 1rem 2rem;
+    border-bottom: 0.1rem solid rgb(160, 152, 152);
+    background-color: rgba(73, 70, 70, 0.548);
+}
+
+.logo {
+}
+
+.logoImg {
+    max-width: 7rem;
+}
+
+.navUl {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.navLi,
+a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.headerSearch {
+    color: whitesmoke;
+}
