@@ -57,6 +57,7 @@ body {
 /* @media only screen and (min-width: 1024px) {}; */
 
 /* HEADER */
+/* Styling the layout of the header */
 .header {
     display: flex;
     flex: 1 0 auto;
@@ -70,16 +71,20 @@ body {
     border-bottom: 0.1rem solid rgb(160, 152, 152);
     background-color: rgba(73, 70, 70, 0.548);
 }
+
+/* Maintaining control of 'logo.png' */
 .logoImg {
     max-width: 7rem;
 }
 
+/* Style 'nav' links horizontally */
 .navUl {
     display: flex;
     flex-direction: row;
     gap: 2rem;
 }
 
+/* Style text of 'a' tags under 'navLi' to remove underlines and change color */
 .navLi,
 a {
     color: whitesmoke;
@@ -87,12 +92,19 @@ a {
     font-size: 1.6rem;
 }
 
+/* Style text of 'a' tags under 'navLi' during :hover to grow 20% and turn yellow */
 .navLi,
 a:hover {
     font-size: 2rem;
     color: yellow;
 }
 
-.headerSearch {
-    color: whitesmoke;
+/* Style 'nav' search/input element */
+input {
+    display: flex;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+    color: rgba(73, 70, 70, 0.548);
+    background-color: whitesmoke;
 }
