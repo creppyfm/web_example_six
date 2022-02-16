@@ -100,11 +100,13 @@ a:hover {
 }
 
 /* Style 'nav' search/input element */
-input {
+input,
+input:active {
     display: flex;
     border: none;
-    border-radius: 2rem;
+    border-radius: 3rem;
     padding: 1rem 1rem;
+    font-family: "Roboto Serif", sans-serif;
     color: rgba(73, 70, 70, 0.548);
     background-color: whitesmoke;
 }
