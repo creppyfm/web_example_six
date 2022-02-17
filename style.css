@@ -65,11 +65,9 @@ body {
 .header {
     display: flex;
     flex: 1 0 auto;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    max-height: 7.5rem;
     padding: 1rem 2rem;
     border-bottom: 0.1rem solid rgb(160, 152, 152);
     background-color: rgba(73, 70, 70, 0.548);
@@ -77,7 +75,9 @@ body {
 
 /* Maintaining control of 'logo.png' */
 .logoImg {
-    width: 100%;
+    display: flex;
+
+    width: 25%;
     height: auto;
 }
 
@@ -90,7 +90,7 @@ body {
 
 /* Style text of 'a' tags under 'navLi' to remove underlines and change color */
 .navLi,
-a {
+.navLinks {
     color: whitesmoke;
     text-decoration: none;
     font-size: 1.6rem;
@@ -98,7 +98,7 @@ a {
 
 /* Style text of 'a' tags under 'navLi' during :hover to grow 20% and turn yellow */
 .navLi,
-a:hover {
+.navLinks:hover {
     font-size: 2rem;
     color: yellow;
 }
@@ -108,8 +108,14 @@ input {
     border: none;
     border-radius: 3rem;
     padding: 1rem 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: "Roboto Serif", sans-serif;
     color: rgba(73, 70, 70, 0.548);
     background-color: whitesmoke;
+}
+
+/* HERO */
+.heroContainer {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
 }
