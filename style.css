@@ -2,10 +2,6 @@
 /* TO UNFOLD ALL: (CTRL + K   CTRL + J) */
 /* TO FOLD ALL: (CTRL + K   CTRL + 0) */
 
-/* * {
-    border: 2px solid red;
-} */
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,300;0,400;0,600;1,100;1,300;1,400;1,600&family=Roboto:ital,wght@0,100;0,700;0,900;1,700&display=swap");
 
 * {
@@ -17,12 +13,25 @@
     position: relative;
 }
 
+/* Displaying flex throughout site contents; setting font-family */
 body {
     font-family: Roboto Serif, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
+/* * {
+    border: 2px solid red;
+} */
+
 /* VARIABLES */
+/*  */
+/* MAIN */
+/* .siteContent {} */
+/*  */
 /* Header */
+/*  */
 /* .headContainer {} */
 /* .header {} */
 /* .logo {} */
@@ -33,13 +42,18 @@ body {
 /* .navLi {} */
 /* .headerSearch {} */
 /*  */
-/*  */
-/*  */
 /* Hero */
 /*  */
+/* .heroContainer {} */
+/* .heroLeft {} */
+/* .heroRight {} */
+/* .heroHero {} */
+/* .heroImg {} */
+/* .heroSmallTxt {} */
+/*  */
 /* Footer */
-/*  */
-/*  */
+/* .footerContainer {} */
+/* .footerGHLink {} */
 
 /* Utility Classes */
 .row {
@@ -59,6 +73,17 @@ body {
 /* @media only screen and (min-width: 768px) and (max-width: 1023px) {}; */
 /* Large/Ex-Large Devices */
 /* @media only screen and (min-width: 1024px) {}; */
+
+/* Not allowing the header or footer to shrink */
+.headContainer,
+.footerContainer {
+    flex: none;
+}
+
+/* Setting flex to stop sections from shrinking; keep footer sticky */
+.siteContent {
+    flex: 1 0 auto;
+}
 
 /* HEADER */
 /* Styling the layout of the header */
@@ -115,7 +140,37 @@ input {
 }
 
 /* HERO */
+/* Style hero section flex row; add gradient bg */
 .heroContainer {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 1 0 auto;
+    height: 150rem;
+    background-image: url("./img/assets/section_bg/hero_img_3d2417_1080.svg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+.heroLeft {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.heroRight,
+.heroLeft {
+    max-width: 50%;
+}
+
+.heroText {
+    display: flex;
+    color: whitesmoke;
+    font-size: 3rem;
+    max-width: 75%;
+    align-items: center;
 }
