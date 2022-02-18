@@ -189,6 +189,21 @@ input {
     line-height: 3rem;
 }
 
+.heroButton {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    width: 25%;
+    border-radius: 10rem;
+    background-color: rgb(44, 100, 27);
+}
+
+.heroButtonLink {
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: Roboto Serif, sans-serif;
+}
+
 .footerContainer {
     display: flex;
     flex: 1 0 auto;
