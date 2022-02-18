@@ -21,9 +21,9 @@ body {
     min-height: 100%;
 }
 
-/* * {
+* {
     border: 2px solid red;
-} */
+}
 
 /* VARIABLES */
 /*  */
@@ -93,24 +93,28 @@ body {
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    padding: 1rem 2rem;
+    margin: 0;
+    padding: 1rem 3rem;
     border-bottom: 0.1rem solid rgb(160, 152, 152);
     background-color: rgba(73, 70, 70, 0.548);
 }
 
-/* Maintaining control of 'logo.png' */
-.logoImg {
-    display: flex;
-
-    width: 25%;
+/* **FIXED** 'logo' margin-right problem by targeting 'logo' instead of 'logoLink' */
+.logo {
+    max-width: 7.5rem;
     height: auto;
+}
+
+/* Maintaining control of 'logo.png' */
+.logoLink {
+    display: flex;
 }
 
 /* Style 'nav' links horizontally */
 .navUl {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 /* Style text of 'a' tags under 'navLi' to remove underlines and change color */
@@ -118,13 +122,13 @@ body {
 .navLinks {
     color: whitesmoke;
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 /* Style text of 'a' tags under 'navLi' during :hover to grow 20% and turn yellow */
 .navLi,
 .navLinks:hover {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: yellow;
 }
 
@@ -147,10 +151,10 @@ input {
     align-items: center;
     flex: 1 0 auto;
     height: 150rem;
-    background-image: url("./img/assets/section_bg/hero_img_3d2417_1080.svg");
-    background-color: #cccccc;
+    background-image: url("./img/assets/section_bg/hero_img_3d2417_2560.svg");
+    background-color: #351414da;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     background-size: cover;
 }
 
@@ -170,7 +174,23 @@ input {
 .heroText {
     display: flex;
     color: whitesmoke;
-    font-size: 3rem;
     max-width: 75%;
     align-items: center;
+    padding: 2rem;
+}
+
+.heroHero {
+    font-size: 10rem;
+    line-height: 10rem;
+}
+
+.heroSmallTxt {
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.footerContainer {
+    display: flex;
+    flex: 1 0 auto;
+    height: 10rem;
 }
