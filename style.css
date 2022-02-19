@@ -9,14 +9,14 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 62.5%;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
 }
 
 /* Displaying flex throughout site contents; setting font-family */
-html,
-body {
+html {
     height: 100%;
+    margin: auto;
 }
 
 body {
@@ -26,6 +26,7 @@ body {
 .siteContent {
     font-family: Roboto Serif, sans-serif;
     display: flex;
+    flex: 1 0 auto;
     flex-direction: column;
     min-height: 100vh;
 }
@@ -90,9 +91,6 @@ body {
 }
 
 /* Setting flex to stop sections from shrinking; keep footer sticky */
-.siteContent {
-    flex: 1 0 auto;
-}
 
 /* HEADER */
 /* Styling the layout of the header */
@@ -104,13 +102,14 @@ body {
     position: sticky;
     margin: 0;
     padding: 1rem 3rem;
+    max-height: 15rem;
     border-bottom: 0.1rem solid rgb(160, 152, 152);
     background-color: rgba(73, 70, 70, 0.548);
 }
 
 /* **FIXED** 'logo' margin-right problem by targeting 'logo' instead of 'logoLink' */
-.logo {
-    max-width: 7.5rem;
+.logoImg {
+    width: 7.5rem;
     height: auto;
 }
 
@@ -124,6 +123,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 4rem;
+    list-style: none;
 }
 
 /* Style text of 'a' tags under 'navLi' to remove underlines and change color */
@@ -232,7 +232,7 @@ input {
     justify-content: space-between;
     align-items: center;
     flex: 1 0 auto;
-    height: 2rem;
+    height: 17.5rem;
     padding: 2rem;
     background-color: rgba(73, 70, 70, 0.548);
 }
