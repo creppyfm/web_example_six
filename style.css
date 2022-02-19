@@ -234,10 +234,7 @@ input {
     flex: 1 0 auto;
     height: 2rem;
     padding: 2rem;
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.2),
-        rgba(43, 197, 164, 0.452)
-    );
+    background-color: rgba(73, 70, 70, 0.548);
 }
 
 .footerLeft,
@@ -256,8 +253,8 @@ input {
 
 .footerLeftMid,
 .footerLeftBottom {
-    padding-bottom: 1rem;
-    color: rgb(160, 152, 152);
+    padding-bottom: 0.5rem;
+    color: whitesmoke;
     font-size: 1rem;
 }
 
@@ -267,7 +264,7 @@ input {
 
 .footerMidMid,
 .footerMidBottom {
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .footerMidLogo,
@@ -283,10 +280,10 @@ input {
 
 .footerMidTop,
 .footerLeftTop {
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     font-size: 1.6rem;
     font-weight: 600;
-    color: rgb(160, 152, 152);
+    color: whitesmoke;
 }
 
 .footerRight {
@@ -303,10 +300,10 @@ input {
     font-size: 1.6rem;
     text-decoration: none;
     padding-bottom: 2rem;
-    color: rgb(160, 152, 152);
+    color: whitesmoke;
 }
 
 .footerRightLink:hover {
     font-size: 2rem;
-    color: rgba(73, 70, 70, 0.548);
+    color: whitesmoke;
 }
