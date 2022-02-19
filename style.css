@@ -160,7 +160,8 @@ input {
     justify-content: space-around;
     align-items: center;
     flex: 1 0 auto;
-    height: 150rem;
+    padding-bottom: 10rem;
+    height: 200rem;
     background-image: url("./img/assets/section_bg/hero_img_3d2417_2560.svg");
     background-color: #351414da;
     background-repeat: no-repeat;
@@ -227,6 +228,61 @@ input {
     color: whitesmoke;
 }
 
+/* SECTION TWO - SERVICES */
+.sectionTwoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 10rem;
+}
+
+.sectionTwoContainerLeft,
+.sectionTwoContainerMid,
+.sectionTwoContainerRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50rem;
+    padding: 10rem;
+    border-radius: 2rem;
+    box-shadow: 0rem 0.3rem 0.7rem 0.3rem rgba(73, 70, 70, 0.548);
+}
+
+.sectionTwoContainerLeft:hover,
+.sectionTwoContainerMid:hover,
+.sectionTwoContainerRight:hover {
+    padding: 5rem;
+    border: 1px solid #49464670;
+    box-shadow: 0rem 0.3rem 0.7rem 0.3rem rgba(80, 63, 63, 0.747);
+}
+
+.sectionTwoContainerImg {
+    width: 25rem;
+    height: auto;
+}
+
+.sectionTwoTop {
+    padding: 2rem;
+}
+
+.sectionTwoMid {
+    font-size: 3rem;
+    color: #494646;
+    text-align: center;
+    padding: 1rem;
+}
+
+.sectionTwoBottom {
+    font-size: 2rem;
+    color: #494646;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* FOOTER */
 .footerContainer {
     display: flex;
     justify-content: space-between;
